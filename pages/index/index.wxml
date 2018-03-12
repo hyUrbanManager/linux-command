@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view>
+  <view class='title'>文件命令</view>
+  <block wx:for-items="{{common}}" wx:key="{{item.name}}">
+    <view id='{{item.name}}' class="{{index % 3 != 2 ? 'command-light-grey' : 'command-grey'}}" bindtap='showInformation'>
+      <view class="command">{{item.name}}</view> 
+      <view class="command-desc">{{item.desc}}</view>
+    </view>
+  </block>
+
+  <view class='title'>系统命令</view>
+  <block wx:for-items="{{sys}}" wx:key="{{item.name}}">
+    <view id='{{item.name}}' class="{{index % 3 != 2 ? 'command-light-grey' : 'command-grey'}}" bindtap='showInformation'>
+      <view class="command">{{item.name}}</view> 
+      <view class="command-desc">{{item.desc}}</view>
+    </view>
+  </block> 
+
+  <button type='priamry' class='aboutButton' bindtap='showAbout'>关于</button>
+
+</view>

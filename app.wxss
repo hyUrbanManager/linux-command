@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* 签名字体 */
+.author-sign {
+  margin-right: 20px;
+  font-size: 11pt;
+  color: #888888;
+  position: fixed;
+  right: 1px;
+  bottom: 5px;
+}

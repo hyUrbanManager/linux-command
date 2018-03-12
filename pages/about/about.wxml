@@ -1,0 +1,6 @@
+<!--about.wxml-->
+<view class='background'>
+  <image src='{{iconSrc}}' class='myIcon'></image>
+  <rich-text class='aboutText'>{{about}}\n{{append2}}</rich-text>
+  <view class='author-sign' decode='true'>by hy</view>
+</view>

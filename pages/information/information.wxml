@@ -1,0 +1,7 @@
+<!--information.wxml-->
+<view class='background'>
+  <text class='name'>{{command.name}}</text>
+  <text class='desc'>{{command.desc}}</text>
+  <text class='sample'>{{command.sample}}</text>
+  <view class='author-sign'>by hy</view>
+</view>

@@ -1,0 +1,47 @@
+/**index.wxss**/
+/* 浅灰块 */
+.command-light-grey {
+  display: flex;
+  background: #F8F8FF;
+  padding: 2px;
+}
+
+/* 白色块 */
+.command-grey {
+  display: flex;
+  background: #FFFFFF;
+  padding: 2px;
+}
+
+/* 每一栏标题 */
+.title {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background: #F8F8FF;
+}
+
+/* 命令 */
+.command {
+  flex: 4;
+  font-size: 11pt;
+  margin-left: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+/* 命令描述 */
+.command-desc {
+  flex: 6;
+  font-size: 11pt;
+  text-align: left;
+  color: #353535;
+}
+
+/* 关于按钮 */
+.aboutButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 180pt;
+  height: 35pt;
+}
