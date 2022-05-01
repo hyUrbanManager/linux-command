@@ -7,24 +7,30 @@ Page({
     common: app.command[0],
     sys: app.command[1],
   },
-  onLoad: function() {
+  onLoad: function () {
     this.setData({
-      
+
     });
+
+    // 设置可以被分享给朋友和朋友圈
+    wx.showShareMenu({
+      withShareTicket: true,
+      menus: ['shareAppMessage', 'shareTimeline']
+    })
   },
 
   // 显示命令的详细信息
-  showInformation: function(e) {
+  showInformation: function (e) {
     var name = e.currentTarget.id;
     wx.navigateTo({
       url: '../information/information'
     })
-    
+
     app.currentCommand = {}
-    for(var index=0; index<app.command.length;index++) {
+    for (var index = 0; index < app.command.length; index++) {
       var list = app.command[index];
-      for(var i=0; i<list.length;i++) {
-        if(list[i].name == name) {
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].name == name) {
           app.currentCommand = list[i];
           break;
         }
@@ -34,7 +40,7 @@ Page({
   },
 
   // 显示关于界面
-  showAbout: function() {
+  showAbout: function () {
     wx.navigateTo({
       url: '../about/about',
     })
